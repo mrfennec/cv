@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Резюме Станислава Феннека</title>
-    </head>
-    <body>
-        <table cellspacing="15">
-            <tr>
-                <td>
-                    <img src="ava.jpg" width="250" alt="тут должна быть моя Авка">
-                </td>
-                <td>
-                    <h1>Станислав Феннек</h1>
-    <h3><em>Я начинающий <strong>Программист</strong></em></h3>
-    <p>Я хочу быть финаносово не зависимым и путешествовать по миру, с комфортом!</p>
-                </td>
-            </tr>
-        </table>
-        <hr>
-    
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-        <li><a href="https://www.instagram.com/mr.fennec/" target="_blank">Инста с фотками</a></li>
-        <li><a href="https://t.me.mrfennec" target="_blank">Пиши телегу суда</a></li>
-    </ul>
-    <hr>
-    <h2>Мои увлечения</h2>
-    <ol type="a">
-        <li>Фотография</li>
-        <li>Катание на велосипеде</li>
-        <li>Путеествие</li>
-    </ol>
-    <hr>
-    
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>компания</th>
-            <th>Должность</th>
-            <th>годы работы</th>
-        </tr>
-        <tr>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Резюме Станислава Феннека</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Дальше идёт тело -->
+  <body>
+    <div class="container">
+      <!-- Заголовок и Ава -->
+      <div class="info">
+        <img src="ava.jpg" alt="тут должна быть моя Авка" class="avatar" />
+        <div class="info-text">
+          <h1>Станислав Феннек</h1>
+          <p>Я начинающий <strong>Программист</strong></p>
+          <p>
+            Я хочу быть финаносово не зависимым и путешествовать по миру, с
+            комфортом!
+          </p>
+          <!-- соцеальные сети -->
+          <h4>Мои социальные сети</h4>
+          <a href="https://www.instagram.com/mr.fennec/" target="_blank"
+            >Инста с фотками</a
+          >
+          |
+          <a href="https://t.me.mrfennec" target="_blank">Пиши телегу суда</a>
+          <!-- Конец соцеалкам ! -->
+        </div>
+      </div>
+      <!-- Заголовок и Ава  конец -->
+
+      <!-- Про мои Увлечения -->
+      <div class="card bg-yellow">
+        <h2>Мои увлечения</h2>
+        <ol class="list">
+          <li>Фотография</li>
+          <li>Катание на велосипеде</li>
+          <li>Путеествие</li>
+        </ol>
+      </div>
+      <!-- Конец увлечением ! -->
+      <!-- Про опыт работы-->
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>Игровой клуб "Дельта"</td>
+            <td>системный Администратор</td>
+            <td>2004-2006</td>
+          </tr>
+          <tr>
             <td>проф лицей №20</td>
             <td>системный Администратор</td>
-            <td> 2007-2008</td>
-        </tr>
-        <tr>
+            <td>2007-2008</td>
+          </tr>
+          <tr>
+            <td>проф лицей №20</td>
+            <td>Дизайнер и разрабодчик, вэб сайта</td>
+            <td>2008-2011</td>
+          </tr>
+          <tr>
             <td>творческая мастерская Арт-Мастер</td>
             <td>Дизайнер Витражей</td>
-            <td> 2012-2021</td>
-        </tr>
-    </table>
-    <hr>
-
-    <h2>Ютуб Курсы от  Владлена.</h2>
-    <a href="youtube.html">Посмотреть список.</a>
-    </body>
-    <hr>
-    <p>
+            <td>2012-2021</td>
+          </tr>
+        </table>
+      </div>
+      <!-- Кердык опыту -->
+      <!-- Какой то плей лист,нужно ещё подумать -->
+      <div class="card bg-red">
+        <h2>Бесплатные курсы которые я прошёл</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=DOEtVdkKwcU"
+              target="_blank"
+              >HTML для Начинающих - Практический Курс [2021].
+              <em>На русском.</em></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=SpCUuyZZTp8"
+              target="_blank"
+              >CSS для Начинающих - Практический Курс [2021].
+              <em>На русском.</em></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Конец ссылке на внешний ресурс -->
+      <!-- Блок Связи -->
+      <div class="contact">
         <h2>Связаться со мной</h2>
-        
+
         <form action="/">
-            <label for="name">Ваше имя</label>
-            <input type="text" id="neme"
-            placeholder="Ведите Ваше имя ">
-        <br>
-            <label for="email">Ваш Email</label>
-            <input type="email" id="email"
-            placeholder="Ведите Email...">
-            <br>
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="neme" placeholder="Ведите Ваше имя " />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваш email</label>
+              <input type="email" id="email" placeholder="Ведите email..." />
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="text">Ваше Сообщение</label>
-            <br>
-            <textarea id="text" cols="30" rows="5"></textarea>
-        <br>
-            <input type="submit" value="Связаться!">
+          </div>
+          <div class="form-group">
+            <textarea id="text" cols="15" rows="2"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться!" />
         </form>
-    </p>
-    <hr>
+        <!-- Кердык связи  -->
+      </div>
+    </div>
+    <!-- короче вопрос , как задать свойства родителю, но не передать его детям?  -->
+    <!--
+    <div class="box-model">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+      <div style="margin-top: 500px"></div>
+    </div>-->
+  </body>
 </html>
